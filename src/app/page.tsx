@@ -1,11 +1,19 @@
-import Image from "next/image";
-
 import styles from "./page.module.css";
+import Header from "./components/header";
 
-export default function Home() {
+function Home() {
   return (
     <div className={styles.page}>
-      <footer className={styles.footer}>ss</footer>
+      <Header />
+      <main className={styles.main}></main>
+      <footer className={styles.footer}>
+        <h4>
+          INSTANT DELIVERY @ TODOS OS DIREITOS RESERVADOS CNPJ
+          38.947.723/0001-75
+        </h4>
+      </footer>
     </div>
   );
 }
+
+export default Home;
