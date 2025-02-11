@@ -1,6 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 
-import { InstantLogo } from "../../assets";
+import { InstantLogo, LogInIcon } from "../../assets";
 import styles from "./header.module.css";
 
 const Header = () => {
@@ -14,16 +15,35 @@ const Header = () => {
         height={0}
       />
       <ul className={styles.content}>
-        <li>Home</li>
-        <li>Como funciona?</li>
-        <li>Recursos</li>
-        <li>QR Code</li>
-        <li>Clientes</li>
-        <li>Dúvidas</li>
-        <li>Nossos números</li>
-        <li>Dúvidas</li>
+        <li>
+          <Link href="#first-section">Home</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Como funciona?</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Recursos</Link>
+        </li>
+        <li>
+          <Link href="#first-section">QR Code</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Clientes</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Dúvidas</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Nossos números</Link>
+        </li>
+        <li>
+          <Link href="#first-section">Dúvidas</Link>
+        </li>
       </ul>
-      <button className={styles.loginButton}>LOGIN</button>
+      <button className={styles.loginButton}>
+        <Image src={LogInIcon} alt="" width={0} height={0} />
+        Login
+      </button>
     </header>
   );
 };

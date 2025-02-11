@@ -1,3 +1,6 @@
 import InstantLogo from "./instantDelivery-logo.png";
+import MainBanner from "./main-banner.svg";
 
-export { InstantLogo };
+import LogInIcon from "./login.svg";
+
+export { InstantLogo, LogInIcon, MainBanner };
