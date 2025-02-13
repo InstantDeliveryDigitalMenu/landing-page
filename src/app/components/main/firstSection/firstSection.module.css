@@ -19,6 +19,10 @@
   height: 100%;
 }
 
+.mobileImage {
+  display: none;
+}
+
 .lastSide {
   display: flex;
   flex-direction: column;
@@ -51,10 +55,35 @@
   .container {
     grid-template-columns: 1fr;
     width: 100%;
+    gap: 2rem;
+  }
+
+  .firstSide {
+    display: flex;
+    justify-content: center;
+    padding-left: 1.5rem;
   }
 
   .firstSide .image {
+    display: none;
+  }
+
+  .firstSide .mobileImage {
+    display: block;
+    width: 90%;
+    height: fit-content;
+  }
+
+  .lastSide h3 {
+    text-align: center;
+  }
+
+  .button {
+    background-color: var(--instant-color);
+    padding: 0.8rem 1.5rem;
+    color: var(--white);
     width: 100%;
-    height: 100%;
+
+    font-size: 1.2rem;
   }
 }

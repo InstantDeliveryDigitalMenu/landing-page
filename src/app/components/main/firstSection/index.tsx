@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import InputText from "../../input-text";
-import { MainBanner } from "../../../assets";
+import { MainBanner, MainBannerMobile } from "../../../assets";
 
 import styles from "./firstSection.module.css";
 
@@ -16,10 +16,17 @@ const FirstSection = () => {
       <div className={styles.firstSide}>
         <Image
           src={MainBanner}
-          alt="Simplifique o atendimento do seu restaurante com nosso Cardápio Digital | Fique ligado! Uma nova experiência com a Instant Delivery vem por ai! | Notebook com cardápio digital na tela."
+          alt="Simplifique o atendimento do seu restaurante com nosso Cardápio Digital | Fique ligado! Uma nova experiência com a Instant Delivery vem por ai! | Notebook com cardápio digital na tela."
           width={0}
           height={0}
           className={styles.image}
+        />
+        <Image
+          src={MainBannerMobile}
+          alt="Simplifique o atendimento do seu restaurante com nosso Cardápio Digital | Fique ligado! Uma nova experiência com a Instant Delivery vem por ai! | Notebook com cardápio digital na tela."
+          width={0}
+          height={0}
+          className={styles.mobileImage}
         />
       </div>
       <form className={styles.lastSide}>
