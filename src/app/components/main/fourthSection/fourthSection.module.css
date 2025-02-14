@@ -4,13 +4,8 @@
   align-items: center;
 
   padding: 4rem 2rem;
-}
 
-.contentWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-
-  gap: 2rem;
+  line-height: 1.4;
 }
 
 .titleBox {
@@ -18,6 +13,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-width: 55rem;
 
   gap: 0.25rem;
   margin: 0rem 0rem 4rem 0rem;
@@ -28,10 +24,6 @@
   flex-direction: column;
   align-items: center;
   width: fit-content;
-
-  gap: 0.5rem;
-
-  font-weight: 500;
 }
 
 .titleBox h2 {
@@ -53,98 +45,67 @@
 }
 
 .line {
-  width: 50%;
+  width: 40%;
   border: 0.5px solid var(--instant-color);
 
   margin-bottom: 1rem;
 }
 
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+
+  gap: 8rem;
+
+  padding-top: 1rem;
+}
+
 .itemBox {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 20rem;
-  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-width: 17rem;
 
   gap: 1rem;
-  padding-top: 2rem;
 
   text-align: center;
   line-height: 2;
 }
 
-.contentItem {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+.itemBox h3 {
+  text-align: center;
 
-  gap: 3rem;
-}
-
-.contentItem img {
-  width: 4rem;
-}
-
-.itemTextBox {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-
-  gap: 0.5rem;
-
-  line-height: 1;
-}
-
-.itemTextBox h3 {
-  text-align: left;
-
-  font-size: 1.25rem;
-
-  color: var(--fg-title);
-}
-
-.itemTextBox h4 {
-  text-align: left;
-
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 500;
+  line-height: 1.4;
 
   color: var(--fg-title);
 }
 
-.mainBanner {
-  display: block;
-}
+.itemBox h4 {
+  text-align: center;
 
-.mainBannerMobile {
-  display: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  line-height: 1.4;
+
+  color: var(--fg-title);
 }
 
 @media screen and (max-width: 500px) {
-  .titleBox h2 {
-    font-size: 2rem;
-  }
-
   .contentWrapper {
     grid-template-columns: 1fr;
     width: 100%;
-
-    gap: 2rem;
+    gap: 4rem;
   }
 
   .itemBox {
-    padding: 0 2rem;
     max-width: 100%;
-    gap: 3rem;
   }
 
-  .mainBanner {
-    display: none;
-  }
-
-  .mainBannerMobile {
-    display: block;
-    padding: 2rem;
+  .titleBox h2 {
+    font-size: 2rem;
   }
 }

@@ -5,7 +5,7 @@
   height: fit-content;
 
   gap: 1rem;
-  /* border: 1px solid red; */
+  margin-bottom: 4rem;
 }
 
 .firstSide {
@@ -36,6 +36,7 @@
 
 .lastSide > h3 {
   font-size: 1.35rem;
+  font-weight: 500;
 }
 
 .buttonBox {

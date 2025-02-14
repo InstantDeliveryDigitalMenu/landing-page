@@ -1,9 +1,12 @@
 import styles from "./page.module.css";
 import Header from "./components/header";
 import Divider from "./components/divider";
+
 import FirstSection from "./components/main/firstSection";
 import SecondSection from "./components/main/secondSection";
 import ThirdSection from "./components/main/thirdSection";
+import FourthSection from "./components/main/fourthSection";
+import FifthSection from "./components/main/fifthSection";
 
 function Home() {
   return (
@@ -15,6 +18,10 @@ function Home() {
         <SecondSection />
         <Divider />
         <ThirdSection />
+        <Divider />
+        <FourthSection />
+        <Divider />
+        <FifthSection />
       </main>
       <footer className={styles.footer}>
         <h4>
