@@ -22,6 +22,7 @@ function Home() {
         <FourthSection />
         <Divider />
         <FifthSection />
+        <Divider />
       </main>
       <footer className={styles.footer}>
         <h4>

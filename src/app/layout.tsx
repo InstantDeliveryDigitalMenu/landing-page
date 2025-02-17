@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
-import { Josefin_Sans } from "next/font/google";
+import { Josefin_Sans, Montserrat } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Josefin_Sans({
   subsets: ["latin"],
   weight: ["100", "300", "400", "500", "700"],
+});
+
+const geistMonSans = Montserrat({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${geistSans.className}`}>{children}</body>
+      <body className={`${geistSans.className} ${geistMonSans.className}`}>
+        {children}
+      </body>
     </html>
   );
 }

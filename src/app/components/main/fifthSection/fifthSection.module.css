@@ -57,24 +57,27 @@
 }
 
 .contentWrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  display: flex;
+  width: 77rem;
 
-  gap: 2rem;
+  overflow: hidden;
+
+  gap: 1rem;
 }
 
 .itemBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-width: 20rem;
-
-  gap: 1rem;
+  max-width: 23rem;
+  min-width: 23rem;
 
   text-align: center;
+  font-family: "Montserrat", sans-serif;
   line-height: 2;
+
+  background-color: var(--white-darker);
+  border-radius: 0.5rem;
 }
 
 .itemBox img {
@@ -90,15 +93,73 @@
   color: var(--fg-title);
 }
 
+.titleContentBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  gap: 1rem;
+  padding: 1.5rem;
+
+  border: 1px solid #e1e8ed;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.contentTitle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contentTitle img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+}
+
+.contentTitle div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+
+.contentTitle h3 {
+  font-weight: 600;
+}
+
+.contentTitle h4 {
+  color: #697882;
+}
+
+.commentBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  padding: 1.5rem;
+
+  border: 1px solid #e1e8ed;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+
+.commentBox h4 {
+  text-align: start;
+  font-weight: 500;
+  color: var(--fg-title);
+}
+
 @media screen and (max-width: 500px) {
   .contentWrapper {
-    grid-template-columns: 1fr;
-    width: 100%;
+    display: flex;
+    max-width: 23rem;
     gap: 2rem;
   }
 
   .itemBox {
-    max-width: 100%;
+    max-width: 23rem;
+    min-width: 23rem;
   }
 
   .titleBox h2 {

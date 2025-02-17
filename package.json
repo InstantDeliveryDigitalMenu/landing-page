@@ -13,7 +13,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "extends": ["prettier"],
+  "extends": [
+    "prettier"
+  ],
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
     "@types/node": "^22.13.1",
