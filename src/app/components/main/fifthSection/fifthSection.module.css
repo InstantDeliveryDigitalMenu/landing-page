@@ -154,7 +154,6 @@
   .contentWrapper {
     display: flex;
     max-width: 23rem;
-    gap: 2rem;
   }
 
   .itemBox {

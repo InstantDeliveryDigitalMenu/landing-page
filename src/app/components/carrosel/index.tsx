@@ -1,4 +1,4 @@
-import { ReactNode, useCallback, useRef, useState } from "react";
+import { ReactNode, useCallback, useMemo, useRef, useState } from "react";
 import styles from "./carrosel.module.css";
 
 interface CarroselProps {
@@ -24,7 +24,7 @@ const Carrosel = ({
   const [sliderPosition, setSliderPosition] = useState(0);
 
   const sliderWidth = width ?? 400;
-  const sliderMargin = margin ?? 32;
+  const sliderMargin = margin ?? 16;
 
   const currentSlide = Math.round(
     sliderPosition / (sliderWidth + sliderMargin)
@@ -49,6 +49,16 @@ const Carrosel = ({
   const goToPreviousSlide = useCallback(() => {
     scrollToSlide(sliderRef.current, currentSlide - 1);
   }, [currentSlide]);
+
+  const scrolledToEndOfSlider = useMemo(() => {
+    if (!sliderRef.current) return false;
+    return (
+      sliderRef.current.scrollWidth -
+        sliderRef.current.scrollLeft -
+        sliderRef.current.clientLeft ===
+      0
+    );
+  }, [sliderPosition]);
 
   return (
     <>
@@ -82,7 +92,7 @@ const Carrosel = ({
             padding: "10px",
             cursor: "pointer",
           }}
-          disabled={currentSlide > 0 ? false : true}
+          disabled={currentSlide === 0}
           onClick={() => goToPreviousSlide()}
         >
           {"< Anterior"}
@@ -94,6 +104,9 @@ const Carrosel = ({
             padding: "10px",
             cursor: "pointer",
           }}
+          disabled={
+            scrolledToEndOfSlider || currentSlide === carroselData.length - 1
+          }
           onClick={() => goToNextSlide()}
         >
           {"Próximo >"}
