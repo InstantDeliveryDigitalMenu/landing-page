@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  overflow: hidden;
+
+  border-bottom: 1px solid var(--white-darker);
+  border-radius: 0.5rem;
+}
+
+.titleBox {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.titleBox > i {
+  display: flex;
+
+  height: fit-content;
+}
+
+.titleBox[data-state="open"] > i > img {
+  height: fit-content;
+  transition: 0.3s ease-in-out;
+  transform: rotate(90deg);
+}
+
+.titleBox[data-state="closed"] > i > img {
+  height: fit-content;
+  transition: 0.3s ease-in-out;
+  transform: rotate(0deg);
+  filter: brightness(0);
+}
+
+.titleBox > h4 {
+  text-align: start;
+  color: var(--black);
+  font-size: 1.2rem;
+}
+
+.content {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+
+  transform-origin: top;
+  transition: transform 0.26s ease;
+}
+
+.content[data-state="open"] {
+  padding: 1rem;
+  transform: scaleY(1);
+}
+
+.content[data-state="closed"] {
+  transform: scaleY(0);
+  height: 0;
+  transition: max-height 0.25s ease-in;
+}

@@ -12,7 +12,7 @@ import {
 
 const ThirdSection = () => {
   return (
-    <section id="thirdSection" className={styles.container}>
+    <section id="third-section" className={styles.container}>
       <div className={styles.titleBox}>
         <div>
           <h2>Alguns Recursos do Cardápio Digital</h2>

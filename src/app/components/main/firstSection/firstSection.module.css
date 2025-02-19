@@ -6,6 +6,7 @@
 
   gap: 1rem;
   margin-bottom: 4rem;
+  scroll-margin-top: 6rem;
 }
 
 .firstSide {
@@ -56,6 +57,7 @@
   .container {
     grid-template-columns: 1fr;
     width: 100%;
+    padding-top: 1rem;
     gap: 2rem;
   }
 

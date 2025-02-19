@@ -7,6 +7,8 @@ import SecondSection from "./components/main/secondSection";
 import ThirdSection from "./components/main/thirdSection";
 import FourthSection from "./components/main/fourthSection";
 import FifthSection from "./components/main/fifthSection";
+import SixthSection from "./components/main/sixthsection";
+import Footer from "./components/foooter";
 
 function Home() {
   return (
@@ -23,13 +25,9 @@ function Home() {
         <Divider />
         <FifthSection />
         <Divider />
+        <SixthSection />
+        <Footer />
       </main>
-      <footer className={styles.footer}>
-        <h4>
-          INSTANT DELIVERY @ TODOS OS DIREITOS RESERVADOS CNPJ
-          38.947.723/0001-75
-        </h4>
-      </footer>
     </div>
   );
 }

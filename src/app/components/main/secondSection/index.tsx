@@ -4,7 +4,7 @@ import { CheckIcon, PhoneChatIcon, PhoneIcon } from "@/app/assets";
 
 const SecondSection = () => {
   return (
-    <section id="secondSection" className={styles.container}>
+    <section id="second-section" className={styles.container}>
       <div className={styles.titleBox}>
         <div>
           <h2>Como Funciona?</h2>

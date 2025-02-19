@@ -5,6 +5,7 @@ import WomanSmileBanner from "./woman-icon.svg";
 
 /* Icons */
 import CheckIcon from "./check-icon.svg";
+import ChevronIcon from "./chevron-icon.svg";
 import CommentIcon from "./comment-icon.svg";
 import DeskIcon from "./desk-icon.svg";
 import MoneyIcon from "./money-icon.svg";
@@ -21,6 +22,7 @@ import LogInIcon from "./login.svg";
 
 export {
   CheckIcon,
+  ChevronIcon,
   CommentIcon,
   DeskIcon,
   InstantLogo,

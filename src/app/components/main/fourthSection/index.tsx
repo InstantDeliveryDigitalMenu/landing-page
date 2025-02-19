@@ -4,7 +4,7 @@ import { DeskIcon, QRCodeIcon } from "@/app/assets";
 
 const FourthSection = () => {
   return (
-    <section id="secondSection" className={styles.container}>
+    <section id="fourth-section" className={styles.container}>
       <div className={styles.titleBox}>
         <div>
           <h2>QR Code por mesa, dashboard excluiva e muito mais</h2>

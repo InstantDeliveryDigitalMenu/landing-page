@@ -19,25 +19,19 @@ const Header = () => {
           <Link href="#first-section">Home</Link>
         </li>
         <li>
-          <Link href="#first-section">Como funciona?</Link>
+          <Link href="#second-section">Como funciona?</Link>
         </li>
         <li>
-          <Link href="#first-section">Recursos</Link>
+          <Link href="#third-section">Recursos</Link>
         </li>
         <li>
-          <Link href="#first-section">QR Code</Link>
+          <Link href="#fourth-section">QR Code</Link>
         </li>
         <li>
-          <Link href="#first-section">Clientes</Link>
+          <Link href="#fifth-section">Clientes</Link>
         </li>
         <li>
-          <Link href="#first-section">Dúvidas</Link>
-        </li>
-        <li>
-          <Link href="#first-section">Nossos números</Link>
-        </li>
-        <li>
-          <Link href="#first-section">Dúvidas</Link>
+          <Link href="#sixth-section">Dúvidas</Link>
         </li>
       </ul>
       <button className={styles.loginButton}>
