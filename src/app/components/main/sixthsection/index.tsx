@@ -47,15 +47,10 @@ const SixthSection = () => {
             restaurante, através de QR CODE por mesa.
           </h4>
         </Accordion>
-        <Accordion title="Por que eu preciso do Instant Delivery no meu estabelecimento?">
+        <Accordion title="Tem taxa de Adesão?">
           <h4>
-            Nosso cardápio digital irá automatizar e organizar os seus pedidos
-            recebidos no WhatsApp, evitando erros, congestionamento e a
-            desistência do cliente por atraso no atendimento. De forma prática e
-            rápida, seu cliente irá realizar o pedido com apenas alguns cliques,
-            escolhendo os produtos, forma de pagamento e forma de entrega. Além
-            disto, temos a opção de agilizar e facilitar o pedido em seu
-            restaurante, através de QR CODE por mesa.
+            Não cobramos taxa de adesão. Após o período de teste grátis, seu
+            estabelecimento irá pagar somente pelo valor do plano contratado.
           </h4>
         </Accordion>
         <Accordion title="Tem taxa de entrega por bairro e região">
