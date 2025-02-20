@@ -25,6 +25,11 @@
   gap: 1rem;
 }
 
+.logoBox > img {
+  width: 6.25rem;
+  height: auto;
+}
+
 .logoBox > div {
   display: flex;
   flex-direction: column;
@@ -51,6 +56,8 @@
 .description h4 {
   font-weight: 500;
   color: #676767;
+
+  max-width: 21rem;
 }
 
 .socialBox {
@@ -62,4 +69,27 @@
 .socialBox > div {
   display: flex;
   gap: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .contentWrapper {
+    width: 100%;
+
+    padding: 0.5rem;
+
+    gap: 1.5rem;
+  }
+
+  .logoBox {
+    gap: 0.5rem;
+  }
+
+  .logoBox > img {
+    width: 5rem;
+    height: auto;
+  }
 }

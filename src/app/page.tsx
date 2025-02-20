@@ -8,6 +8,8 @@ import ThirdSection from "./components/main/thirdSection";
 import FourthSection from "./components/main/fourthSection";
 import FifthSection from "./components/main/fifthSection";
 import SixthSection from "./components/main/sixthsection";
+import SeventhSection from "./components/main/seventhsection";
+import EigthSection from "./components/main/eigthsection";
 import Footer from "./components/foooter";
 
 function Home() {
@@ -26,6 +28,10 @@ function Home() {
         <FifthSection />
         <Divider />
         <SixthSection />
+        <Divider />
+        <SeventhSection />
+        <Divider />
+        <EigthSection />
         <Footer />
       </main>
     </div>

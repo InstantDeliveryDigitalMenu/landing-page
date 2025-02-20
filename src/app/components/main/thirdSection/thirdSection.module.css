@@ -87,7 +87,7 @@
   width: 4rem;
 }
 
-.itemTextBox {
+.itemTextBoxRight {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -97,7 +97,34 @@
   line-height: 1;
 }
 
-.itemTextBox h3 {
+.itemTextBoxRight h3 {
+  text-align: right;
+
+  font-size: 1.25rem;
+
+  color: var(--fg-title);
+}
+
+.itemTextBoxRight h4 {
+  text-align: right;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  color: var(--fg-title);
+}
+
+.itemTextBoxLeft {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  gap: 0.5rem;
+
+  line-height: 1;
+}
+
+.itemTextBoxLeft h3 {
   text-align: left;
 
   font-size: 1.25rem;
@@ -105,13 +132,11 @@
   color: var(--fg-title);
 }
 
-.itemTextBox h4 {
+.itemTextBoxLeft h4 {
   text-align: left;
 
   font-size: 1rem;
   font-weight: 500;
-
-  color: var(--fg-title);
 }
 
 .mainBanner {
@@ -132,6 +157,10 @@
     width: 100%;
 
     gap: 2rem;
+  }
+
+  .contentItem {
+    gap: 1rem;
   }
 
   .itemBox {

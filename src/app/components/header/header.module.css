@@ -3,18 +3,94 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  height: 6.1rem;
+  position: fixed;
+  top: 0;
 
   padding: 1rem 2rem 1rem 0;
-  gap: 5rem;
 
   background-color: #ffffff;
   box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
 
   overflow-x: hidden;
 
+  z-index: 2;
+}
+
+.containerDesk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5rem;
+}
+
+.containerMobile {
+  display: none;
+}
+
+.menuImage {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.shadowBox[data-state="closed"] {
+  display: none;
+}
+
+.shadowBox[data-state="open"] {
+  display: flex;
   position: fixed;
   top: 0;
-  z-index: 3;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contentMobile {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+
+  background-color: var(--white);
+  overflow: hidden;
+
+  padding: 1.5rem;
+}
+
+.contentMobile div:first-child {
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.logoBoxMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+
+  list-style-type: none;
+}
+
+.menuList > li {
+  display: flex;
+  width: 100%;
+
+  font-size: 1.15rem;
+
+  padding: 0.5rem;
 }
 
 .content {
@@ -65,4 +141,25 @@
 
 .loginButton:hover {
   filter: brightness(0.95);
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+
+  .containerDesk {
+    display: none;
+  }
+
+  .containerMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logo {
+    width: 9rem;
+  }
 }

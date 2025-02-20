@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./secondSection.module.css";
-import { CheckIcon, PhoneChatIcon, PhoneIcon } from "@/app/assets";
+import { CheckCircleIcon, PhoneChatIcon, PhoneIcon } from "@/app/assets";
 
 const SecondSection = () => {
   return (
@@ -30,7 +30,7 @@ const SecondSection = () => {
             alt="Icone de um simbolo de check"
             width={0}
             height={0}
-            src={CheckIcon}
+            src={CheckCircleIcon}
           />
           <h3>Finaliza o seu pedido sem fazer cadastro...</h3>
           <h4>

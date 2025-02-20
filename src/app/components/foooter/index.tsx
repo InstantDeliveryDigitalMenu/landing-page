@@ -10,12 +10,14 @@ function Footer() {
     <footer className={styles.container}>
       <div className={styles.contentWrapper}>
         <div className={styles.logoBox}>
-          <Image src={InstantLogo} alt="Instant Delivery Logo" width={100} />
+          <Image src={InstantLogo} alt="Instant Delivery Logo" />
           <div>
             <h4 className={styles.title}>Instant Delivery</h4>
             <div className={styles.description}>
-              <h4>Rua Cassiterita, Nº 1501, Bairro: Santa Inês</h4>
-              <h4>CEP: 31080-150, Belo Horizonte/Minas Gerais</h4>
+              <h4>
+                Rua Cassiterita, Nº 1501, Bairro: Santa Inês CEP: 31080-150,
+                Belo Horizonte/Minas Gerais
+              </h4>
             </div>
           </div>
         </div>
